@@ -2,5 +2,17 @@
 import PackageDescription
 
 let package = Package(
-    name: "SwiftyCam"
+    name: "SwiftyCam",
+    platforms: [
+        .iOS(.v15)
+    ],
+    products: [
+        .library(
+            name: "SwiftyCam",
+            targets: ["SwiftyCam"]
+        )
+    ],
+    targets: [
+        .target(name: "SwiftyCam"),
+    ]
 )
